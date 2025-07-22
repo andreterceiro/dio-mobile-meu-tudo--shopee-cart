@@ -1,1 +1,1 @@
-console.log("item.js");
+async function createItem(name, price, quantity){}
