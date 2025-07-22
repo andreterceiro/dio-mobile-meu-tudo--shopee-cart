@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/andreterceiro/dio-mobile-meu-tudo--shopee-cart/issues"
   },
-  "homepage": "https://github.com/andreterceiro/dio-mobile-meu-tudo--shopee-cart#readme"
+  "homepage": "https://github.com/andreterceiro/dio-mobile-meu-tudo--shopee-cart#readme",
+  "type": "module"
 }
