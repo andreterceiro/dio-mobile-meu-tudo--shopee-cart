@@ -1,3 +1,4 @@
+import * as cartService from './services/cart.js';
 import createItem from './services/item.js';
 
 console.log("Bem-vindo ao carrinho da Shopee");
