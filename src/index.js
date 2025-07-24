@@ -12,8 +12,12 @@ const item3 = await createItem("bola", 20, 2);
 
 await cartService.addItem(myCart, item1);
 await cartService.addItem(myCart, item2);
-await cartService.deleteItem(myCart, 2);
+//await cartService.deleteItem(myCart, 2);
 await cartService.addItem(myWishList, item3);
+await cartService.decrementItem(myCart, 1);
+await cartService.decrementItem(myCart, 1);
+await cartService.decrementItem(myCart, 1);
+await cartService.decrementItem(myCart, 2);
 await cartService.displayCart(myCart);
 
 console.log("Subtotal do carrinho: " + await cartService.calculateTotal(myCart));
