@@ -10,6 +10,14 @@ async function deleteItem(userCart, index){
 }
 
 async function decrementItem(userCart, index) {
+    const indexToDecrement = index - 1;
+    if (typeof userCart[indexToDecrement] == "object" && typeof userCart[indexToDecrement].quantity == "number") {
+        if (userCart[indexToDecrement].quantity > 1) {
+            userCart[indexToDecrement].quantity--;
+        } else {
+            userCart.splice(indexToDecrement, 1);
+        }
+    }
 }
 
 async function calculateTotal(userCart){
