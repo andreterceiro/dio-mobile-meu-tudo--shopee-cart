@@ -15,9 +15,17 @@ async function calculateTotal(userCart){
     return userCart.reduce((total, item) => total + item.subtotal(), 0);
 }
 
+async function displayCart(userCart) {
+    console.log("Shopee cart list\n");
+    userCart.forEach((item, index) => {
+        console.log(`${index + 1}. ${item.name} - R$${item.price} | ${item.quantity}x | Subtotal ${item.subtotal()}`);
+    });
+}
+
 export {
     addItem,
     deleteItem,
     removeItem,
-    calculateTotal
+    calculateTotal,
+    displayCart
 }
