@@ -12,7 +12,7 @@ const item3 = await createItem("bola", 20, 2);
 
 await cartService.addItem(myCart, item1);
 await cartService.addItem(myCart, item2);
-await cartService.deleteItem(myCart, item1.name);
+await cartService.deleteItem(myCart, 2);
 await cartService.addItem(myWishList, item3);
 await cartService.displayCart(myCart);
 
